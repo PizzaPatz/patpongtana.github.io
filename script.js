@@ -6,10 +6,6 @@ menuToggle.addEventListener('click', () => {
   mainNav.classList.toggle('active');
 });
 
-// ============================================
-// PERSONAL PROJECTS DATA
-// Add your projects here - the page will automatically render them
-// ============================================
 const personalProjects = [
   {
     id: 1,
@@ -40,7 +36,7 @@ const personalProjects = [
     title: "Retro Games - University Senior Project Project",
     description: "Group project from Senior Project course at California State University, Long Beach, using Java and several libraries to detect mouse and keyboard inputs. There are 7 games in total that can be picked from the main menu. Multi-player is available with sharing keyboard/mouse inputs, for example, in Chess game, the players have to exchange the touch pad to move the pieces.",
     images: [
-      "images/BirdStufz.png"
+      "images/Birdstufz.png"
     ],
     tags: ["Java", "Collaboration", "Object-Oriented Programming", "JDK"],
     links: {
