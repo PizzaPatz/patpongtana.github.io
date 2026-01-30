@@ -245,6 +245,132 @@ body {
   margin: 0;
 }
 
+/* Education Section */
+.education-section {
+  margin-bottom: 80px;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background: #161b22;
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #30363d;
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  border-color: #6366f1;
+  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+}
+
+.education-main {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.education-text {
+  flex: 1;
+}
+
+.education-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #30363d;
+}
+
+.education-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-details h3,
+.education-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e6edf3;
+  margin: 0 0 8px 0;
+}
+
+.education-school {
+  font-size: 18px;
+  color: #a5b4fc;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+}
+
+.education-period {
+  font-size: 14px;
+  color: #8b949e;
+  margin: 0 0 16px 0;
+}
+
+.education-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #c9d1d9;
+  margin: 0 0 16px 0;
+}
+
+.education-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.highlight-tag {
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.education-subsection {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #30363d;
+}
+
+.education-subsection h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8b5cf6;
+  margin: 0 0 8px 0;
+}
+
+.education-subsection .education-school {
+  font-size: 16px;
+}
+
+.education-subsection .education-period {
+  margin-bottom: 12px;
+}
+
+.education-subsection .education-description {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
 /* Personal Projects Section */
 .projects-section {
   margin-top: 80px;
@@ -867,5 +993,37 @@ body {
 
   .project-info h3 {
     font-size: 20px;
+  }
+
+  /* Education Mobile */
+  .education-card {
+    padding: 24px;
+  }
+
+  .education-main {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .education-image {
+    width: 100%;
+    height: 180px;
+    order: -1;
+  }
+
+  .education-text {
+    text-align: center;
+  }
+
+  .education-highlights {
+    justify-content: center;
+  }
+
+  .education-text h3 {
+    font-size: 20px;
+  }
+
+  .education-subsection {
+    text-align: center;
   }
 }
